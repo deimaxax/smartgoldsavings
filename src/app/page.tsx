@@ -1,6 +1,17 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // In a real app, successful API call would go here
+    router.push('/thank-you');
+  };
+
   return (
     <div className="min-h-screen flex flex-col font-sans">
       {/* HEADER */}
@@ -147,12 +158,30 @@ export default function Home() {
                 <li>The &quot;Loophole&quot; that allows you to own physical metals inside a retirement account.</li>
                 <li>Strategies to protect your legacy from inflation and taxes.</li>
               </ul>
-              <a href="#" className="btn" style={{ minWidth: '300px', textAlign: 'center' }}>
-                Send Me The Free Guide
-              </a>
-              <p className="text-sm mt-4 opacity-80">
-                Fast & Free Shipping • Zero Cost • Zero Obligation
-              </p>
+              <form className="mt-6 p-6 bg-white rounded shadow-md border border-gray-200" onSubmit={handleSubmit}>
+                <h3 className="text-xl mb-4 text-primary font-bold">Where should we send your kit?</h3>
+                <div className="flex flex-col gap-4">
+                  <input 
+                    type="text" 
+                    placeholder="First Name" 
+                    className="p-3 border border-gray-300 rounded text-lg"
+                    required
+                  />
+                  <input 
+                    type="email" 
+                    placeholder="Email Address" 
+                    className="p-3 border border-gray-300 rounded text-lg"
+                    required
+                  />
+                  <button type="submit" className="btn w-full text-center">
+                    Send Me The Free Guide
+                  </button>
+                  <p className="text-xs text-center text-gray-500 mt-2">
+                    By clicking above, you agree to our <a href="/privacy-policy" className="underline">Privacy Policy</a>. 
+                    Your information is secure.
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </section>
