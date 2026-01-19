@@ -262,9 +262,9 @@ export default function Home() {
       <footer className="footer">
         <div className="container">
           <div className="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Risk Disclosure</a>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/risk-disclosure">Risk Disclosure</a>
           </div>
           <p className="mb-4">© 2026 SmartGoldSavings.com. All Rights Reserved.</p>
           
