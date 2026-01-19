@@ -103,6 +103,29 @@ export default function Home() {
           </div>
         </section>
 
+        {/* CHART SECTION */}
+        <section className="section bg-primary text-center">
+          <div className="container">
+            <h2 className="text-white mb-8">The Numbers Don&apos;t Lie</h2>
+            <p className="mb-8 text-lg text-white opacity-90" style={{ maxWidth: '800px', margin: '0 auto 2rem auto' }}>
+              While the purchasing power of the dollar has plummeted, gold has historically protected wealth. See the divergence for yourself.
+            </p>
+            <div className="flex justify-center">
+              <Image 
+                src="/chart-gold-dollar.png" 
+                alt="Chart showing Gold Price rising vs Dollar Purchasing Power falling (2000-2026)" 
+                width={800} 
+                height={450} 
+                className="rounded shadow-lg border border-white/10"
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
+            </div>
+            <p className="mt-6 text-sm text-white opacity-70">
+              *Past performance is not indicative of future results. Market data for illustration purposes only.
+            </p>
+          </div>
+        </section>
+
         {/* SOLUTION / OFFER SECTION */}
         <section id="offer" className="solution-section">
           <div className="container solution-content">
