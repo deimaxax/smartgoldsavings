@@ -156,6 +156,106 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* HOW IT WORKS SECTION */}
+        <section className="section bg-light text-center">
+          <div className="container">
+            <h2 className="text-primary">How It Works</h2>
+             <p className="text-center mb-8" style={{ maxWidth: '600px', margin: '0 auto' }}>
+              We make it simple to secure your hard-earned savings.
+            </p>
+            <div className="process-grid">
+              <div className="process-step">
+                <div className="step-number">1</div>
+                <h3>Request Info</h3>
+                <p>Fill out the form to get your free 2026 Gold Investment Guide delivered to your door.</p>
+              </div>
+              <div className="process-step">
+                <div className="step-number">2</div>
+                <h3>Learn Options</h3>
+                <p>Read the guide to understand how a Gold IRA can act as a firewall against inflation.</p>
+              </div>
+              <div className="process-step">
+                <div className="step-number">3</div>
+                <h3>Secure Future</h3>
+                <p>When you are ready, our partners help you transfer funds tax-free to physical gold.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* TESTIMONIALS SECTION */}
+        <section className="section bg-white text-center">
+          <div className="container">
+            <h2 className="text-primary">Trusted By American Families</h2>
+            <div className="testimonial-grid">
+              {/* Review 1 */}
+              <div className="testimonial-card">
+                <div className="testimonial-header">
+                  <Image src="/testimonial-man.png" alt="Robert T." width={60} height={60} className="testimonial-avatar" />
+                  <div>
+                    <div className="font-bold">Robert T.</div>
+                    <div className="text-sm text-gray-500">Retired Engineer, FL</div>
+                  </div>
+                  <div className="stars" style={{ marginLeft: 'auto' }}>★★★★★</div>
+                </div>
+                <p className="italic">&quot;I watched my 401(k) drop in 2008 and I swore I wouldn&apos;t let it happen again. Moving part of my savings to gold gave me peace of mind I haven&apos;t felt in years.&quot;</p>
+              </div>
+               {/* Review 2 */}
+              <div className="testimonial-card">
+                <div className="testimonial-header">
+                  <Image src="/testimonial-woman.png" alt="Sarah J." width={60} height={60} className="testimonial-avatar" />
+                  <div>
+                    <div className="font-bold">Sarah J.</div>
+                    <div className="text-sm text-gray-500">Teacher, OH</div>
+                  </div>
+                  <div className="stars" style={{ marginLeft: 'auto' }}>★★★★★</div>
+                </div>
+                <p className="italic">&quot;The guide was an eye-opener. I didn&apos;t know I could legally hold physical gold in my IRA without penalties. The process was much easier than I thought.&quot;</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ SECTION */}
+        <section className="section bg-light">
+          <div className="container faq-container">
+            <h2 className="text-primary text-center mb-8">Frequently Asked Questions</h2>
+            
+            <div className="faq-item">
+              <details>
+                <summary className="faq-question">Is this really free?</summary>
+                <div className="faq-answer">Yes. The Gold Investment Guide is 100% free. We even pay for shipping. There is absolutely no obligation to buy anything.</div>
+              </details>
+            </div>
+
+            <div className="faq-item">
+              <details>
+                <summary className="faq-question">Can I really own physical gold in an IRA?</summary>
+                <div className="faq-answer">Yes. A &quot;Self-Directed IRA&quot; allows you to hold physical precious metals instead of just paper assets. The guide explains exactly how this works under IRS rules.</div>
+              </details>
+            </div>
+
+            <div className="faq-item">
+              <details>
+                <summary className="faq-question">Will I be taxed if I move my 401(k)?</summary>
+                <div className="faq-answer">Typically, no. If done correctly as a &quot;Rollover,&quot; you can transfer funds from an existing 401(k) or IRA into a Gold IRA without triggering any immediate tax penalties.</div>
+              </details>
+            </div>
+
+             <div className="faq-item">
+              <details>
+                <summary className="faq-question">Why gold now?</summary>
+                <div className="faq-answer">With national debt at record highs and inflation persisting, gold has historically served as a safe haven store of value when paper currency loses purchasing power.</div>
+              </details>
+            </div>
+
+             <div className="flex justify-center mt-8">
+               <a href="#offer" className="btn">Get My Free Guide Now</a>
+             </div>
+
+          </div>
+        </section>
       </main>
 
       {/* FOOTER */}
